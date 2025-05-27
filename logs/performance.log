@@ -97,3 +97,6 @@
 2025-05-27 23:47:24 | PERFORMANCE: {"operation": "full_query_processing", "duration_ms": 7903.68, "timestamp": "2025-05-27T23:47:24.414301", "query_id": "query_1748369836", "user_query_length": 38, "sql_query_length": 163, "result_rows": 10, "result_columns": 2, "chart_type": "bar", "llm_time": 7.777221202850342}
 2025-05-27 23:47:24 | PERFORMANCE: __main__.TextToSQLApp.process_natural_language_query took 7.913s
 2025-05-27 23:47:24 | PERFORMANCE: __main__.TextToSQLApp.run took 7.986s
+2025-05-28 00:00:59 | PERFORMANCE: __main__.TextToSQLApp.setup_page_config took 0.233s
+2025-05-28 00:01:00 | PERFORMANCE: __main__.TextToSQLApp.initialize_database took 0.806s
+2025-05-28 00:01:02 | PERFORMANCE: __main__.TextToSQLApp.initialize_llm took 1.767s
