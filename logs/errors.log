@@ -1,0 +1,13 @@
+2025-05-27 15:38:51 | ERROR    | __main__:process_natural_language_query:453 - Could not extract SQL query from agent response
+2025-05-27 15:38:51 | ERROR    | __main__:run:656 - Query processing failed completely
+2025-05-27 16:54:31 | ERROR    | __main__:process_natural_language_query:460 - Failed to capture SQL from agent workflow.
+2025-05-27 16:54:31 | ERROR    | __main__:run:661 - Query processing failed completely
+2025-05-27 21:37:59 | ERROR    | __main__:process_natural_language_query:533 - Query processing failed after 6.698s: 'str' object has no attribute 'get'
+2025-05-27 21:37:59 | ERROR    | __main__:process_natural_language_query:534 - Failed query: What are the total sales by country?
+2025-05-27 21:37:59 | ERROR    | __main__:run:682 - Query processing failed completely
+2025-05-27 21:41:38 | ERROR    | __main__:run:686 - Unexpected error in query processing: not enough values to unpack (expected 2, got 1)
+2025-05-27 22:14:06 | ERROR    | __main__:run:687 - Unexpected error in query processing: not enough values to unpack (expected 2, got 1)
+2025-05-27 23:11:12 | ERROR    | decorators:wrapper:59 - SQL agent setup failed: "'tools', 'tool_names', 'agent_scratchpad'"
+2025-05-27 23:11:12 | ERROR    | decorators:wrapper:43 - ERROR: __main__.TextToSQLApp.setup_sql_agent failed after 0.009s | error="'tools', 'tool_names', 'agent_scratchpad'"
+2025-05-27 23:11:12 | CRITICAL | __main__:__init__:69 - Application initialization failed: "'tools', 'tool_names', 'agent_scratchpad'"
+2025-05-27 23:11:12 | CRITICAL | __main__:<module>:810 - Application failed to start: "'tools', 'tool_names', 'agent_scratchpad'"
