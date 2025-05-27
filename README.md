@@ -3,6 +3,8 @@
 
 A Streamlit application that converts natural language queries into SQL queries and visualizes the results.
 
+![alt text](images/query_execution.png)
+
 ## Features
 
 - Natural language to SQL conversion using Groq's Llama 3.3
