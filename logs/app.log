@@ -1883,3 +1883,63 @@
 2025-05-27 23:47:24 | INFO     | decorators:wrapper:37 - PERFORMANCE: __main__.TextToSQLApp.run took 7.986s
 2025-05-27 23:47:24 | INFO     | __main__:<module>:979 - Application session completed successfully
 2025-05-27 23:47:24 | INFO     | __main__:<module>:987 - Application shutdown
+2025-05-28 00:00:59 | INFO     | logger_config:setup_logger:65 - Logger initialized successfully
+2025-05-28 00:00:59 | INFO     | logger_config:setup_logger:65 - Logger initialized successfully
+2025-05-28 00:00:59 | INFO     | __main__:<module>:971 - ==================================================
+2025-05-28 00:00:59 | INFO     | __main__:<module>:972 - Starting Text-to-SQL Application
+2025-05-28 00:00:59 | INFO     | __main__:<module>:973 - Start time: 2025-05-28T00:00:59.350073
+2025-05-28 00:00:59 | INFO     | __main__:<module>:974 - ==================================================
+2025-05-28 00:00:59 | INFO     | __main__:__init__:58 - Initializing Text-to-SQL Application
+2025-05-28 00:00:59 | INFO     | __main__:__init__:60 - Session ID: 20250528_000059
+2025-05-28 00:00:59 | DEBUG    | decorators:wrapper:17 - ENTRY: __main__.TextToSQLApp.setup_page_config | args=(<__main__.TextToSQLApp object at 0x00000211E8C27890>,) | kwargs={}
+2025-05-28 00:00:59 | DEBUG    | __main__:setup_page_config:75 - Setting up Streamlit page configuration
+2025-05-28 00:00:59 | INFO     | __main__:setup_page_config:88 - Page configuration set: {'page_title': 'Text-to-SQL Assistant', 'page_icon': '🔍'}
+2025-05-28 00:00:59 | DEBUG    | decorators:wrapper:33 - EXIT: __main__.TextToSQLApp.setup_page_config | duration=0.233s
+2025-05-28 00:00:59 | INFO     | decorators:wrapper:37 - PERFORMANCE: __main__.TextToSQLApp.setup_page_config took 0.233s
+2025-05-28 00:00:59 | DEBUG    | decorators:wrapper:17 - ENTRY: __main__.TextToSQLApp.initialize_database | args=(<__main__.TextToSQLApp object at 0x00000211E8C27890>,) | kwargs={}
+2025-05-28 00:00:59 | INFO     | __main__:initialize_database:94 - Initializing database connection
+2025-05-28 00:00:59 | DEBUG    | __main__:initialize_database:97 - Database path: chinook.db
+2025-05-28 00:00:59 | INFO     | __main__:initialize_database:105 - Database file size: 884736 bytes
+2025-05-28 00:00:59 | INFO     | __main__:initialize_database:113 - Database connection test successful. Tables found: [(13,)]
+2025-05-28 00:00:59 | DEBUG    | decorators:wrapper:17 - ENTRY: __main__.TextToSQLApp.log_database_schema | args=(<__main__.TextToSQLApp object at 0x00000211E8C27890>,) | kwargs={}
+2025-05-28 00:00:59 | INFO     | __main__:log_database_schema:132 - Database tables: [('albums',), ('sqlite_sequence',), ('artists',), ('customers',), ('employees',), ('genres',), ('invoices',), ('invoice_items',), ('media_types',), ('playlists',), ('playlist_track',), ('tracks',), ('sqlite_stat1',)]
+2025-05-28 00:00:59 | DEBUG    | __main__:log_database_schema:140 - Schema for table albums: [(0, 'AlbumId', 'INTEGER', 1, None, 1), (1, 'Title', 'NVARCHAR(160)', 1, None, 0), (2, 'ArtistId', 'INTEGER', 1, None, 0)]
+2025-05-28 00:00:59 | DEBUG    | __main__:log_database_schema:140 - Schema for table sqlite_sequence: [(0, 'name', '', 0, None, 0), (1, 'seq', '', 0, None, 0)]
+2025-05-28 00:00:59 | DEBUG    | __main__:log_database_schema:140 - Schema for table artists: [(0, 'ArtistId', 'INTEGER', 1, None, 1), (1, 'Name', 'NVARCHAR(120)', 0, None, 0)]
+2025-05-28 00:00:59 | DEBUG    | __main__:log_database_schema:140 - Schema for table customers: [(0, 'CustomerId', 'INTEGER', 1, None, 1), (1, 'FirstName', 'NVARCHAR(40)', 1, None, 0), (2, 'LastName', 'NVARCHAR(20)', 1, None, 0), (3, 'Company', 'NVARCHAR(80)', 0, None, 0), (4, 'Address', 'NVARCHAR(70)', 0, None, 0), (5, 'City', 'NVARCHAR(40)', 0, None, 0), (6, 'State', 'NVARCHAR(40)', 0, None, 0), (7, 'Country', 'NVARCHAR(40)', 0, None, 0), (8, 'PostalCode', 'NVARCHAR(10)', 0, None, 0), (9, 'Phone', 'NVARCHAR(24)', 0, None, 0), (10, 'Fax', 'NVARCHAR(24)', 0, None, 0), (11, 'Email', 'NVARCHAR(60)', 1, None, 0), (12, 'SupportRepId', 'INTEGER', 0, None, 0)]
+2025-05-28 00:00:59 | DEBUG    | __main__:log_database_schema:140 - Schema for table employees: [(0, 'EmployeeId', 'INTEGER', 1, None, 1), (1, 'LastName', 'NVARCHAR(20)', 1, None, 0), (2, 'FirstName', 'NVARCHAR(20)', 1, None, 0), (3, 'Title', 'NVARCHAR(30)', 0, None, 0), (4, 'ReportsTo', 'INTEGER', 0, None, 0), (5, 'BirthDate', 'DATETIME', 0, None, 0), (6, 'HireDate', 'DATETIME', 0, None, 0), (7, 'Address', 'NVARCHAR(70)', 0, None, 0), (8, 'City', 'NVARCHAR(40)', 0, None, 0), (9, 'State', 'NVARCHAR(40)', 0, None, 0), (10, 'Country', 'NVARCHAR(40)', 0, None, 0), (11, 'PostalCode', 'NVARCHAR(10)', 0, None, 0), (12, 'Phone', 'NVARCHAR(24)', 0, None, 0), (13, 'Fax', 'NVARCHAR(24)', 0, None, 0), (14, 'Email', 'NVARCHAR(60)', 0, None, 0)]
+2025-05-28 00:00:59 | DEBUG    | __main__:log_database_schema:140 - Schema for table genres: [(0, 'GenreId', 'INTEGER', 1, None, 1), (1, 'Name', 'NVARCHAR(120)', 0, None, 0)]
+2025-05-28 00:00:59 | DEBUG    | __main__:log_database_schema:140 - Schema for table invoices: [(0, 'InvoiceId', 'INTEGER', 1, None, 1), (1, 'CustomerId', 'INTEGER', 1, None, 0), (2, 'InvoiceDate', 'DATETIME', 1, None, 0), (3, 'BillingAddress', 'NVARCHAR(70)', 0, None, 0), (4, 'BillingCity', 'NVARCHAR(40)', 0, None, 0), (5, 'BillingState', 'NVARCHAR(40)', 0, None, 0), (6, 'BillingCountry', 'NVARCHAR(40)', 0, None, 0), (7, 'BillingPostalCode', 'NVARCHAR(10)', 0, None, 0), (8, 'Total', 'NUMERIC(10,2)', 1, None, 0)]
+2025-05-28 00:00:59 | DEBUG    | __main__:log_database_schema:140 - Schema for table invoice_items: [(0, 'InvoiceLineId', 'INTEGER', 1, None, 1), (1, 'InvoiceId', 'INTEGER', 1, None, 0), (2, 'TrackId', 'INTEGER', 1, None, 0), (3, 'UnitPrice', 'NUMERIC(10,2)', 1, None, 0), (4, 'Quantity', 'INTEGER', 1, None, 0)]
+2025-05-28 00:00:59 | DEBUG    | __main__:log_database_schema:140 - Schema for table media_types: [(0, 'MediaTypeId', 'INTEGER', 1, None, 1), (1, 'Name', 'NVARCHAR(120)', 0, None, 0)]
+2025-05-28 00:00:59 | DEBUG    | __main__:log_database_schema:140 - Schema for table playlists: [(0, 'PlaylistId', 'INTEGER', 1, None, 1), (1, 'Name', 'NVARCHAR(120)', 0, None, 0)]
+2025-05-28 00:00:59 | DEBUG    | __main__:log_database_schema:140 - Schema for table playlist_track: [(0, 'PlaylistId', 'INTEGER', 1, None, 1), (1, 'TrackId', 'INTEGER', 1, None, 2)]
+2025-05-28 00:00:59 | DEBUG    | __main__:log_database_schema:140 - Schema for table tracks: [(0, 'TrackId', 'INTEGER', 1, None, 1), (1, 'Name', 'NVARCHAR(200)', 1, None, 0), (2, 'AlbumId', 'INTEGER', 0, None, 0), (3, 'MediaTypeId', 'INTEGER', 1, None, 0), (4, 'GenreId', 'INTEGER', 0, None, 0), (5, 'Composer', 'NVARCHAR(220)', 0, None, 0), (6, 'Milliseconds', 'INTEGER', 1, None, 0), (7, 'Bytes', 'INTEGER', 0, None, 0), (8, 'UnitPrice', 'NUMERIC(10,2)', 1, None, 0)]
+2025-05-28 00:00:59 | DEBUG    | __main__:log_database_schema:140 - Schema for table sqlite_stat1: [(0, 'tbl', '', 0, None, 0), (1, 'idx', '', 0, None, 0), (2, 'stat', '', 0, None, 0)]
+2025-05-28 00:00:59 | DEBUG    | decorators:wrapper:33 - EXIT: __main__.TextToSQLApp.log_database_schema | duration=0.017s
+2025-05-28 00:01:00 | SUCCESS  | __main__:initialize_database:119 - Database initialization completed
+2025-05-28 00:01:00 | DEBUG    | decorators:wrapper:33 - EXIT: __main__.TextToSQLApp.initialize_database | duration=0.806s
+2025-05-28 00:01:00 | INFO     | decorators:wrapper:37 - PERFORMANCE: __main__.TextToSQLApp.initialize_database took 0.806s
+2025-05-28 00:01:00 | DEBUG    | decorators:wrapper:17 - ENTRY: __main__.TextToSQLApp.initialize_llm | args=(<__main__.TextToSQLApp object at 0x00000211E8C27890>,) | kwargs={}
+2025-05-28 00:01:00 | INFO     | __main__:initialize_llm:151 - Initializing Groq LLM
+2025-05-28 00:01:00 | DEBUG    | __main__:initialize_llm:161 - Using Groq API key: gsk_sBCV***Lnql
+2025-05-28 00:01:02 | INFO     | __main__:initialize_llm:177 - LLM initialization successful in 1.767s
+2025-05-28 00:01:02 | DEBUG    | __main__:initialize_llm:178 - LLM test response: content='OK' additional_kwargs={} response_metadata={'token_usage': {'completion_tokens': 2, 'prompt_tokens': 42, 'total_tokens': 44, 'completion_time': 0.008872965, 'prompt_time': 0.002675208, 'queue_time': 0.054256372000000004, 'total_time': 0.011548173}, 'model_name': 'llama-3.3-70b-versatile', 'system_fingerprint': 'fp_2ddfbb0da0', 'finish_reason': 'stop', 'logprobs': None} id='run--4d0bec1e-59fb-4720-bbec-99b8442795a3-0' usage_metadata={'input_tokens': 42, 'output_tokens': 2, 'total_tokens': 44}
+2025-05-28 00:01:02 | INFO     | __main__:initialize_llm:179 - Using model: llama-3.3-70b-versatile
+2025-05-28 00:01:02 | DEBUG    | decorators:wrapper:33 - EXIT: __main__.TextToSQLApp.initialize_llm | duration=1.767s
+2025-05-28 00:01:02 | INFO     | decorators:wrapper:37 - PERFORMANCE: __main__.TextToSQLApp.initialize_llm took 1.767s
+2025-05-28 00:01:02 | DEBUG    | decorators:wrapper:17 - ENTRY: __main__.TextToSQLApp.setup_sql_agent | args=(<__main__.TextToSQLApp object at 0x00000211E8C27890>,) | kwargs={}
+2025-05-28 00:01:02 | INFO     | __main__:setup_sql_agent:190 - Setting up SQL agent
+2025-05-28 00:01:02 | DEBUG    | __main__:setup_sql_agent:194 - SQL toolkit created successfully
+2025-05-28 00:01:02 | DEBUG    | __main__:setup_sql_agent:227 - Creating SQL agent with custom prompt
+2025-05-28 00:01:02 | SUCCESS  | __main__:setup_sql_agent:236 - SQL agent setup completed successfully
+2025-05-28 00:01:02 | DEBUG    | decorators:wrapper:33 - EXIT: __main__.TextToSQLApp.setup_sql_agent | duration=0.000s
+2025-05-28 00:01:02 | SUCCESS  | __main__:__init__:67 - Application initialized successfully
+2025-05-28 00:01:02 | DEBUG    | decorators:wrapper:17 - ENTRY: __main__.TextToSQLApp.run | args=(<__main__.TextToSQLApp object at 0x00000211E8C27890>,) | kwargs={}
+2025-05-28 00:01:02 | INFO     | __main__:run:627 - Starting main application runner
+2025-05-28 00:01:02 | DEBUG    | decorators:wrapper:17 - ENTRY: __main__.TextToSQLApp.display_logs_sidebar | args=(<__main__.TextToSQLApp object at 0x00000211E8C27890>,) | kwargs={}
+2025-05-28 00:01:02 | DEBUG    | decorators:wrapper:33 - EXIT: __main__.TextToSQLApp.display_logs_sidebar | duration=0.000s
+2025-05-28 00:01:02 | INFO     | __main__:run:770 - Main application runner completed successfully
+2025-05-28 00:01:02 | DEBUG    | decorators:wrapper:33 - EXIT: __main__.TextToSQLApp.run | duration=0.025s
+2025-05-28 00:01:02 | INFO     | __main__:<module>:979 - Application session completed successfully
+2025-05-28 00:01:02 | INFO     | __main__:<module>:987 - Application shutdown
