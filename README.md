@@ -3,6 +3,8 @@
 
 A Streamlit application that converts natural language queries into SQL queries and visualizes the results.
 
+App Link: [Click Here](https://text-to-sql-akash.streamlit.app/)
+
 ![alt text](images/query_execution.png)
 
 ## Features
@@ -43,4 +45,3 @@ A Streamlit application that converts natural language queries into SQL queries 
 ## Deployment
 
 Deploy to Streamlit Cloud by connecting your GitHub repository.
-"""
